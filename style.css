@@ -15,15 +15,25 @@ body {
   overflow: hidden;
 }
 body > img {
-    position: absolute;
+  position: absolute;
 }
 body > img:first-of-type {
-    top: -70%;
-    left: -10%;
+  top: -70%;
+  left: -10%;
 }
 body > img:last-of-type {
-    bottom: -70%;
-    right: -10%;
+  bottom: -70%;
+  right: -10%;
+}
+@media (max-width: 375px) {
+  body > img:first-of-type {
+    top: -90%;
+    left: -190%;
+  }
+  body > img:last-of-type {
+    bottom: -90%;
+    right: -190%;
+  }
 }
 .container {
   background-color: white;
@@ -65,25 +75,25 @@ body > img:last-of-type {
   margin-top: -30px;
 }
 .container h2 span {
-    font-weight: 400;
+  font-weight: 400;
 }
 .container > span {
   font-weight: 400;
   margin-bottom: 20px;
 }
 .container span {
-    color: hsl(0, 0%, 59%);
+  color: hsl(0, 0%, 59%);
 }
 .container .stats {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  border-top: 0.5px  solid hsla(227, 10%, 46%, 0.308);
+  border-top: 0.5px solid hsla(227, 10%, 46%, 0.308);
 }
 .container .stats .stat {
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
 }
 .container .stats .stat span {
   display: block;
